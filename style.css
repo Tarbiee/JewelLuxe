@@ -84,3 +84,15 @@ p{
     padding-left: 25px;
     padding-right: 25px;
 }
+.card{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: #f97272;
+}
+.card img{
+    width: 100%;
+}
