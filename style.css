@@ -84,15 +84,33 @@ p{
     padding-left: 25px;
     padding-right: 25px;
 }
-.card{
-    flex-basis: 25%;
+#row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#card{
+    width: 23%;
+    text-align: center;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 50px;
+    box-shadow: 0 0 4px 3px pink;
+    min-height: 30%;
+    /* flex-basis: 25%;
     padding: 10px;
+    min-height: 200px;
     min-width: 200px;
     margin-bottom: 50px;
     border-style: solid;
-    border-radius: 30px;
-    border-color: #f97272;
+    border-radius: 30px; */
+    /* border-color: #f97272; */
 }
-.card img{
-    width: 100%;
+#card img{
+    width: 80%;
+    height: 50%;
+}
+h2{
+    text-align: center;
+    margin-bottom: 30px;
 }
