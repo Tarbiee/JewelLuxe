@@ -13,10 +13,23 @@ function renderJewelry(jewelry){
     `
 const cartButton = card.querySelector(".button");
 cartButton.addEventListener("click",(e) => {
+    addToCart(jewelry);
+    renderCartFromStorage();
     e.preventDefault();
-    const cartInfo = document.getElementById("cart-info")
+    
+    
+});
+document.querySelector("#row").appendChild(card)
+}
 
-    const cartRow = document.createElement("tr");
+//function to render the cart from localStorage
+function renderCartFromStorage(){
+    const cartInfo = document.getElementById("cart-info")
+    cartInfo.innerHTML='';//clear the cart before rendering
+    const storedCart =JSON.parse(localStorage.getItem('cart') || '[]');
+    
+    storedCart.forEach(jewelry =>{
+        const cartRow = document.createElement("tr");
     cartRow.class ="cart-row"
     cartRow.innerHTML=`
     
@@ -25,9 +38,9 @@ cartButton.addEventListener("click",(e) => {
             <td>${jewelry.price}</td>
     `;
     cartInfo.appendChild(cartRow);
+    })
     
-})
-document.querySelector("#row").appendChild(card)
+
 }
 
 
