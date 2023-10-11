@@ -129,19 +129,29 @@ h2{
 }
 #cart-info img{
     width: 10%;
-    height: 10%;
+    height: 20%;
 } 
 
 .cart-table {
     width: 100%;
     border-collapse: collapse;
 }
-.cart-table th, .cart-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
+th{
+    max-height: 5px;
     text-align: left;
-    vertical-align: top; /* Align text to the top of the table cells */
+    padding: 20px;
+    color:#ffd6d6;
+    background: #f97272;
+    font-weight: normal;
+    border-radius: 50px;   
+   
 }
+
+#cart-info{
+    margin-left: 10%;
+    padding-left: -10%;
+}
+
 
 
 

@@ -12,14 +12,19 @@ function renderJewelry(jewelry){
     
     `
 const cartButton = card.querySelector(".button");
-cartButton.addEventListener("click",() => {
+cartButton.addEventListener("click",(e) => {
+    e.preventDefault();
     const cartInfo = document.getElementById("cart-info")
-    cartInfo.innerHTML=`
 
+    const cartRow = document.createElement("tr");
+    cartRow.class ="cart-row"
+    cartRow.innerHTML=`
+    
     <td><img src="${jewelry.image}"></td>
             <td>${jewelry.name}</td>
             <td>${jewelry.price}</td>
-    `
+    `;
+    cartInfo.appendChild(cartRow);
     
 })
 document.querySelector("#row").appendChild(card)
@@ -38,14 +43,4 @@ fetch('http://localhost:3000/jewelry')
  })
     
    
-// function addToCart(jewelry){
-//     const cartInfo = document.getElementsByClassName("cart-info")
-//     cartInfo.innerHTML=`
-
-//     <td><img src="${jewelry.image}"></td>
-//             <td>${jewelry.name}</td>
-//             <td>${jewelry.price}</td>
-//     `
-
-// }
 
