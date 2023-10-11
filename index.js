@@ -47,6 +47,13 @@ function renderCartFromStorage(){
 
 }
 
+// Function to add an item to the cart and update localStorage
+   function addToCart(jewelry) {
+   const storedCart = JSON.parse(localStorage.getItem('cart') || '[]');
+   storedCart.push(jewelry);
+    localStorage.setItem('cart', JSON.stringify(storedCart));
+ }
+
 
 
 //fetch requests
