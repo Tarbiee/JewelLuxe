@@ -11,7 +11,10 @@ function renderJewelry(jewelry){
     <button class="button">Add to cart</button>
     
     `
-    
+const cartButton = card.querySelector(".button");
+cartButton.addEventListener("click",() => {
+    addToCart(jewelry);
+})
 document.querySelector("#row").appendChild(card)
 }
 
