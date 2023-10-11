@@ -32,7 +32,7 @@ function renderCartFromStorage(){
     cartInfo.innerHTML='';//clear the cart before rendering
     const storedCart =JSON.parse(localStorage.getItem('cart') || '[]');
     
-    storedCart.forEach(jewelry =>{
+    storedCart.forEach((jewelry, index) =>{
     const cartRow = document.createElement("tr");
     cartRow.class ="cart-row"
     cartRow.innerHTML=`
@@ -40,12 +40,13 @@ function renderCartFromStorage(){
     <td><img src="${jewelry.image}"></td>
             <td>${jewelry.name}</td>
             <td>${jewelry.price}</td>
-            <td><button id="remove-jewel" data-index="${index}>Remove</button></td>
+            <td><button class="remove-jewel" data-index="${index}">Remove</button></td>
     `;
     
 
     cartInfo.appendChild(cartRow);
-    })
+    });
+
     const removeButtons = document.querySelectorAll(".remove-jewel");
     removeButtons.forEach(button => {
        button.addEventListener("click", (event) => {
@@ -64,6 +65,13 @@ function renderCartFromStorage(){
    storedCart.push(jewelry);
     localStorage.setItem('cart', JSON.stringify(storedCart));
  }
+
+ //Function to remove an item from the cart and update localStorage
+function removeItemFromCart(index) {
+    const storedCart = JSON.parse(localStorage.getItem('cart') || '[]');
+    storedCart.splice(index, 1);
+    localStorage.setItem('cart', JSON.stringify(storedCart));
+}
 
 
 
