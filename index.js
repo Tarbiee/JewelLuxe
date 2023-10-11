@@ -1,3 +1,4 @@
+//render jewels
 function renderJewelry(jewelry){
     let card = document.createElement("div");
     card.id = "card"
@@ -6,14 +7,13 @@ function renderJewelry(jewelry){
      <img src="${jewelry.image}" alt="img" class="image">
      <p>${jewelry.description}</p>
      <p class="">Material:${jewelry.material}</p>
-    <p class="price">Price:${jewelry.price}</p>`
+    <p class="price">Price:${jewelry.price}</p>
+    <button id="button">Add to cart</button>
+    
+    `
 
 document.querySelector("#row").appendChild(card)
 }
-
-
-
-
 
 
 
