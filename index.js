@@ -22,6 +22,10 @@ cartButton.addEventListener("click",(e) => {
 document.querySelector("#row").appendChild(card)
 }
 
+window.addEventListener('load', () => {
+       renderCartFromStorage();
+    });
+
 //function to render the cart from localStorage
 function renderCartFromStorage(){
     const cartInfo = document.getElementById("cart-info")
@@ -29,7 +33,7 @@ function renderCartFromStorage(){
     const storedCart =JSON.parse(localStorage.getItem('cart') || '[]');
     
     storedCart.forEach(jewelry =>{
-        const cartRow = document.createElement("tr");
+    const cartRow = document.createElement("tr");
     cartRow.class ="cart-row"
     cartRow.innerHTML=`
     
