@@ -8,10 +8,10 @@ function renderJewelry(jewelry){
      <p>${jewelry.description}</p>
      <p class="">Material:${jewelry.material}</p>
     <p class="price">Price:${jewelry.price}</p>
-    <button id="button">Add to cart</button>
+    <button class="button">Add to cart</button>
     
     `
-
+    
 document.querySelector("#row").appendChild(card)
 }
 

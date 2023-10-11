@@ -96,15 +96,8 @@ p{
     margin-bottom: 2rem;
     border-radius: 50px;
     box-shadow: 0 0 4px 3px pink;
-    min-height: 30%;
-    /* flex-basis: 25%;
-    padding: 10px;
-    min-height: 200px;
-    min-width: 200px;
-    margin-bottom: 50px;
-    border-style: solid;
-    border-radius: 30px; */
-    /* border-color: #f97272; */
+    height: 300px;
+    
 }
 #card img{
     width: 80%;
@@ -114,12 +107,18 @@ h2{
     text-align: center;
     margin-bottom: 30px;
 }
-#button{
+.button{
     background-color: palevioletred;
     border-radius: 50px;
     width: 100px;
     height: 20px;
     border-style: none;
-    margin-top: -15%;
-    
+    margin-top: 5%;
 }
+
+
+
+
+
+
+
