@@ -1,103 +1,92 @@
 {
-    "jewelry": [
-      {
-        "id": 1,
-        "name": "Diamond Necklace",
-        "image":"https://jewelryexchange.com/wp-content/uploads/2022/02/NXX01-Z0002.jpg",
-        "material": "Gold",
-        "price": "$1000.00",
-        "description": "A beautiful diamond necklace made of 18k gold."
-      },
-      {
-        "id": 2,
-        "name": "Sapphire Earrings",
-        "image":"https://www.levinsfinejewellery.co.uk/wp-content/uploads/2018/09/241000022.jpg",
-        "material": "White Gold",
-        "price": "$500.00",
-        "description": "Elegant sapphire earrings in white gold setting."
-      },
-      {
-        "id": 3,
-        "name": "Emerald Ring",
-        "image":"https://static.austenblake.com/image/product_v2/clrn03028/rf0012580/detail/3d/ww/em1/0001.jpg",
-        "material": "Platinum",
-        "price": "$750.00",
-        "description": "A classic emerald ring set in platinum."
-      },
-      {
-        "id": 4,
-        "name": "Ruby Bracelet",
-        "image":"https://www.gregoryjewellers.com.au/wp-content/uploads/2021/02/RGB006-308900-12-Bracelet-WG-B1.jpg",
-        "material": "Silver",
-        "price": "$350.00",
-        "description": "A vibrant ruby bracelet with a sterling silver chain."
-      },
-      {
-        "id": 5,
-        "name": "Pearl Necklace",
-        "image":"https://h4t7f3r7.stackpathcdn.com/images/stauer/products/51344_800.jpg",
-        "material": "Pearls",
-        "price": "$400.00",
-        "description": "A timeless pearl necklace with a pearl pendant."
-      },
-      {
-        "id": 6,
-        "name": "Topaz Brooch",
-        "image":"https://m.media-amazon.com/images/I/61Dj2KBffTS._AC_UF350,350_QL80_.jpg",
-        "material": "Gold",
-        "price": "$280.00",
-        "description": "A delicate topaz brooch in 14k gold."
-      },
-      {
-        "id": 7,
-        "name": "Amethyst Earrings",
-        "image":"https://jewellerydiscovery.co.uk/wp-content/uploads/2020/09/15-4.jpg",
-        "material": "Silver",
-        "price": "$150.00",
-        "description": "Charming amethyst earrings with a silver setting."
-      },
-      {
-        "id": 8,
-        "name": "Opal Ring",
-        "image":"https://cdn11.bigcommerce.com/s-77qyoan9x9/images/stencil/1280x1280/products/7848/66806/Euro_Ring-nature_inspired_engagment_ring-fire_opal_wedding_ring_pink_gold_14k-Anniversary_Gift_Women_Set_2__11740.1671420420.jpg",
-        "material": "Rose Gold",
-        "price": "$600.00",
-        "description": "A stunning opal ring in a rose gold band."
-      },
-      {
-        "id": 9,
-        "name": "Aquamarine Pendant",
-        "image": "https://harringtonbrookshaw.co.uk/pub/media/catalog/product/cache/6f73850afa39d036b3ea41ed69196eed/1/4/aquamarine-diamond-pear-shaped-pendant-in-18ct-white-gold-1419-productgender.jpg",
-        "material": "White Gold",
-        "price": "$420.00",
-        "description": "An aquamarine pendant on a white gold chain."
-      },
-      {
-        "id": 10,
-        "name": "Citrine Bracelet",
-        "image": "https://grandview-mercantile.storage.googleapis.com/wp-content/uploads/2022/09/25173011/ZJDC_294_01.jpg",
-        "material": "Gold",
-        "price": "$320.00",
-        "description": "A citrine bracelet with a 24k gold plating."
-      },
-      {
-        "id": 11,
-        "name": "Tanzanite Necklace",
-        "image":"https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-solestependant-29137102_993534_ED.jpg",
-        "material": "Platinum",
-        "price": "$850.00",
-        "description": "A stunning tanzanite necklace in platinum."
-      },
-      {
-        "id": 12,
-        "name": "Garnet Earrings",
-        "image":"https://cdn11.bigcommerce.com/s-9saznil5k4/images/stencil/1280x1280/products/8134/25580/46078S_alt__68513.1693500797.jpg",
-        "material": "Silver",
-        "price": "$180.00",
-        "description": "Beautiful garnet earrings with a silver setting."
-      }
-     
-      
-    ]
-  }
-  
+  "jewelry": [
+    {
+      "id": 1,
+      "name": "Diamond Necklace",
+      "image": "https://jewelryexchange.com/wp-content/uploads/2022/02/NXX01-Z0002.jpg",
+      "material": "Gold",
+      "price": "$1000.00",
+      "description": "A beautiful diamond necklace made of 18k gold."
+    },
+    {
+      "id": 2,
+      "name": "Sapphire Earrings",
+      "image": "https://www.levinsfinejewellery.co.uk/wp-content/uploads/2018/09/241000022.jpg",
+      "material": "White Gold",
+      "price": "$500.00",
+      "description": "Elegant sapphire earrings in white gold setting."
+    },
+    {
+      "id": 3,
+      "name": "Emerald Ring",
+      "image": "https://static.austenblake.com/image/product_v2/clrn03028/rf0012580/detail/3d/ww/em1/0001.jpg",
+      "material": "Platinum",
+      "price": "$750.00",
+      "description": "A classic emerald ring set in platinum."
+    },
+    {
+      "id": 4,
+      "name": "Ruby Bracelet",
+      "image": "https://www.gregoryjewellers.com.au/wp-content/uploads/2021/02/RGB006-308900-12-Bracelet-WG-B1.jpg",
+      "material": "Silver",
+      "price": "$350.00",
+      "description": "A vibrant ruby bracelet with a sterling silver chain."
+    },
+    {
+      "id": 5,
+      "name": "Pearl Necklace",
+      "image": "https://h4t7f3r7.stackpathcdn.com/images/stauer/products/51344_800.jpg",
+      "material": "Pearls",
+      "price": "$400.00",
+      "description": "A timeless pearl necklace with a pearl pendant."
+    },
+    {
+      "id": 6,
+      "name": "Topaz Brooch",
+      "image": "https://m.media-amazon.com/images/I/61Dj2KBffTS._AC_UF350,350_QL80_.jpg",
+      "material": "Gold",
+      "price": "$280.00",
+      "description": "A delicate topaz brooch in 14k gold."
+    },
+    {
+      "id": 7,
+      "name": "Amethyst Earrings",
+      "image": "https://jewellerydiscovery.co.uk/wp-content/uploads/2020/09/15-4.jpg",
+      "material": "Silver",
+      "price": "$150.00",
+      "description": "Charming amethyst earrings with a silver setting."
+    },
+    {
+      "id": 8,
+      "name": "Opal Ring",
+      "image": "https://cdn11.bigcommerce.com/s-77qyoan9x9/images/stencil/1280x1280/products/7848/66806/Euro_Ring-nature_inspired_engagment_ring-fire_opal_wedding_ring_pink_gold_14k-Anniversary_Gift_Women_Set_2__11740.1671420420.jpg",
+      "material": "Rose Gold",
+      "price": "$600.00",
+      "description": "A stunning opal ring in a rose gold band."
+    },
+    {
+      "id": 9,
+      "name": "Aquamarine Pendant",
+      "image": "https://harringtonbrookshaw.co.uk/pub/media/catalog/product/cache/6f73850afa39d036b3ea41ed69196eed/1/4/aquamarine-diamond-pear-shaped-pendant-in-18ct-white-gold-1419-productgender.jpg",
+      "material": "White Gold",
+      "price": "$420.00",
+      "description": "An aquamarine pendant on a white gold chain."
+    },
+    {
+      "id": 10,
+      "name": "Citrine Bracelet",
+      "image": "https://grandview-mercantile.storage.googleapis.com/wp-content/uploads/2022/09/25173011/ZJDC_294_01.jpg",
+      "material": "Gold",
+      "price": "$320.00",
+      "description": "A citrine bracelet with a 24k gold plating."
+    },
+    {
+      "id": 11,
+      "name": "Tanzanite Necklace",
+      "image": "https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-solestependant-29137102_993534_ED.jpg",
+      "material": "Platinum",
+      "price": "$850.00",
+      "description": "A stunning tanzanite necklace in platinum."
+    }
+  ]
+}

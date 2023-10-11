@@ -151,6 +151,14 @@ th{
     margin-left: 10%;
     padding-left: -10%;
 }
+#remove-jewel{
+    margin-left: 130%;
+    background-color: #f97272;
+    border-radius: 5px;
+    width: 70px;
+    height: 30px;
+}
+
 
 
 

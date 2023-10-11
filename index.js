@@ -40,13 +40,23 @@ function renderCartFromStorage(){
     <td><img src="${jewelry.image}"></td>
             <td>${jewelry.name}</td>
             <td>${jewelry.price}</td>
-            <td><button>remove</button></td>
+            <td><button id="remove-jewel" data-index="${index}>Remove</button></td>
     `;
-    cartInfo.appendChild(cartRow);
-    })
     
 
-}
+    cartInfo.appendChild(cartRow);
+    })
+    const removeButtons = document.querySelectorAll(".remove-jewel");
+    removeButtons.forEach(button => {
+       button.addEventListener("click", (event) => {
+           const indexToRemove = event.target.getAttribute("data-index");
+           removeItemFromCart(indexToRemove);
+            renderCartFromStorage();
+        });
+    });
+ }
+
+
 
 // Function to add an item to the cart and update localStorage
    function addToCart(jewelry) {
@@ -66,6 +76,8 @@ fetch('http://localhost:3000/jewelry')
     jewelryData.forEach(jewelry => renderJewelry(jewelry))
      
  })
+
+ 
     
    
 
