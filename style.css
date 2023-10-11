@@ -116,7 +116,32 @@ h2{
     margin-top: 5%;
 }
 
+/* cart section styling */
+.cart-container{
+    max-width: 1080px;
+    min-height: 500px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    background: radial-gradient(#f97272,#ffd6d6);
+    border-radius: 50px;
 
+}
+.cart-info img{
+    width: 10%;
+    height: 10%;
+} 
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-table th, .cart-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top; /* Align text to the top of the table cells */
+}
 
 
 
