@@ -40,6 +40,7 @@ function renderCartFromStorage(){
     <td><img src="${jewelry.image}"></td>
             <td>${jewelry.name}</td>
             <td>${jewelry.price}</td>
+            <td><button>remove</button></td>
     `;
     cartInfo.appendChild(cartRow);
     })
