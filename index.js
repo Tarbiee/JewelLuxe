@@ -86,10 +86,36 @@ fetch('http://localhost:3000/jewelry')
  })
 
  //event listerner on submit button
-  const submitJewelry = document.getElementById("add-jewel")
-  submitJewelry.addEventListener("submit",handleSubmit)
+  const addJewelryForm = document.getElementById("add-jewelry")
+  addJewelryForm.addEventListener("submit",handleSubmit)
 
- 
+  //Event handler
+
+  function handleSubmit(e){
+    e.preventDefault();
+    let jewelry= {
+        name:e.target.name.value,
+        image:e.target.image.value,
+        material:e.target.material.value,
+        price:e.target.price.value,
+        description:e.target.description.value,
+    }
+    renderJewelry(jewelry)
+    addToJewelry(jewelry)
+  }
+
+ function addToJewelry(jewelry){
+    fetch('http://localhost:3000/jewelry',{
+        method:'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body:JSON.stringify(jewelry)
+
+    })
+    .then(res => res.json())
+    .then(dataJewel => console.log(dataJewel))
+ }
     
    
 
