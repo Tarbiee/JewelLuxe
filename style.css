@@ -160,7 +160,20 @@ th{
 }
 
 
+.add-container{
+    margin-top: 50px;
+    max-width: 1080px;
+    min-height: 500px;
+    padding-left: 25%;
+    padding-right: 25px;
+    margin-left: 20%;
+    border-radius: 50px;
+    background: radial-gradient(#f97272,#ffd6d6);
 
+}
+h3{
+    padding-top: 50px;
+}
 
 
 
