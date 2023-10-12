@@ -175,6 +175,30 @@ h3{
     padding-top: 50px;
 }
 
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    
+  }
+form{
+    padding-right: 5%;
+    align-items: center;
+
+}
+
+#add-jewelry-button{
+
+        width: 30%;
+        padding: 10px;
+        background-color: palevioletred;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      
+}
+
 
 
 

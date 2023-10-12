@@ -85,6 +85,10 @@ fetch('http://localhost:3000/jewelry')
      
  })
 
+ //event listerner on submit button
+  const submitJewelry = document.getElementById("add-jewel")
+  submitJewelry.addEventListener("submit",handleSubmit)
+
  
     
    
