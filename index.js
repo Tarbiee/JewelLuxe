@@ -112,6 +112,11 @@ function removeItemFromCart(index) {
     storedCart.splice(index, 1);
     localStorage.setItem('cart', JSON.stringify(storedCart));
 
+     // Update the total price after removing from the cart
+     const totalPriceValue = document.getElementById("total-price-value");
+     const totalPrice = calculateTotalPrice();
+     totalPriceValue.textContent = `$${totalPrice.toFixed(2)}`;
+
 }
 
 
