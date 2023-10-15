@@ -136,6 +136,13 @@ function handlePurchase(e) {
         alert("Your cart is empty. Please add items before purchasing.");
     }
 }
+// Function to clear the cart
+function clearCart() {
+    localStorage.removeItem('cart');
+    const totalPriceValue = document.getElementById("total-price-value");
+    totalPriceValue.textContent = "$0.00"; // Reset the total price to zero
+    renderCartFromStorage();
+}
 
 
 
