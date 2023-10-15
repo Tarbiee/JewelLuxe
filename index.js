@@ -98,11 +98,10 @@ function renderCartFromStorage(){
 
     localStorage.setItem('cart', JSON.stringify(storedCart));
 
+    // Update the total price after adding to the cart
     const totalPriceValue = document.getElementById("total-price-value");
     const totalPrice = calculateTotalPrice();
     totalPriceValue.textContent = `$${totalPrice.toFixed(2)}`;
-
-
 
 
  }
@@ -113,9 +112,6 @@ function removeItemFromCart(index) {
     storedCart.splice(index, 1);
     localStorage.setItem('cart', JSON.stringify(storedCart));
 
-    const totalPriceValue = document.getElementById("total-price-value");
-    const totalPrice = calculateTotalPrice();
-    totalPriceValue.textContent = `$${totalPrice.toFixed(2)}`;
 }
 
 
