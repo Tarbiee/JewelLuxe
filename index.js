@@ -37,9 +37,10 @@ function renderCartFromStorage(){
     cartRow.class ="cart-row"
     cartRow.innerHTML=`
     
-    <td><img src="${jewelry.image}"></td>
+    <td><img src="${jewelry.image}" ></td>
             <td>${jewelry.name}</td>
             <td>${jewelry.price}</td>
+            <td>${jewelry.quantity}<td>
             <td><button class="remove-jewel" data-index="${index}">Remove</button></td>
     `;
     

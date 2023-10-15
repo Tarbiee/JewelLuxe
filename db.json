@@ -95,14 +95,7 @@
       "material": "Silver",
       "price": "$180.00",
       "description": "Beautiful garnet earrings with a silver setting."
-    },
-    {
-      "name": "Sapphire Earrings",
-      "image": "https://www.levinsfinejewellery.co.uk/wp-content/uploads/2018/09/241000022.jpg",
-      "material": "gold",
-      "price": "$400",
-      "description": "A beautiful diamond necklace made of 18k gold",
-      "id": 13
     }
+    
   ]
 }

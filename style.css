@@ -95,7 +95,7 @@ p{
     padding: 1.5rem;
     margin-bottom: 2rem;
     border-radius: 50px;
-    box-shadow: 0 0 4px 3px pink;
+    box-shadow: 0 0 4px 3px #f97272;
     height: 300px;
     
 }
@@ -108,7 +108,7 @@ h2{
     margin-bottom: 30px;
 }
 .button{
-    background-color: palevioletred;
+    background-color: #e69595;
     border-radius: 50px;
     width: 100px;
     height: 20px;
@@ -123,8 +123,10 @@ h2{
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
-    background: radial-gradient(#f97272,#ffd6d6);
+    /* background: radial-gradient(#f97272,#ffd6d6); */
     border-radius: 50px;
+    border-color: #f97272;
+    border-style: solid;
 
 }
 #cart-info img{
@@ -161,14 +163,21 @@ th{
 
 
 .add-container{
-    margin-top: 50px;
     max-width: 1080px;
+    min-height: 500px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    background: radial-gradient(#f97272,#ffd6d6);
+    border-radius: 50px;
+    /* margin-top: 50px;
+    max-width: fit-content;
     min-height: 500px;
     padding-left: 25%;
     padding-right: 25px;
     margin-left: 20%;
     border-radius: 50px;
-    background: radial-gradient(#f97272,#ffd6d6);
+    background: radial-gradient(#f97272,#ffd6d6); */
 
 }
 h3{
