@@ -26,6 +26,17 @@ window.addEventListener('load', () => {
        renderCartFromStorage();
     });
 
+    function calculateTotalPrice() {
+  const storedCart = JSON.parse(localStorage.getItem('cart') || '[]');
+  let totalPrice = 0;
+  
+  storedCart.forEach((jewelry) => {
+    totalPrice += jewelry.price * jewelry.quantity;
+  });
+
+  return totalPrice;
+}
+
 //function to render the cart from localStorage
 function renderCartFromStorage(){
     const cartInfo = document.getElementById("cart-info")
@@ -40,13 +51,13 @@ function renderCartFromStorage(){
     <td><img src="${jewelry.image}" ></td>
             <td>${jewelry.name}</td>
             <td>${jewelry.price}</td>
-            <td>&nbsp;</td> <!-- Add non-breaking space for spacing -->
-            <td>&nbsp;</td> <!-- Add non-breaking space for spacing -->
-            <td>&nbsp;</td> <!-- Add non-breaking space for spacing -->
-            <td>&nbsp;</td> <!-- Add non-breaking space for spacing -->
-            <td>&nbsp;</td> <!-- Add non-breaking space for spacing -->
-            <td>&nbsp;</td> <!-- Add non-breaking space for spacing -->
-            <td>${jewelry.quantity}<td>
+            <td>&nbsp;</td> 
+            <td>&nbsp;</td>
+            <td>&nbsp;</td> 
+            <td>&nbsp;</td> 
+            <td>&nbsp;</td> 
+            <td>&nbsp;</td> 
+            <td>Quantity:${jewelry.quantity}<td>
             <td><button class="remove-jewel" data-index="${index}">Remove</button></td>
     `;
     
@@ -74,10 +85,10 @@ function renderCartFromStorage(){
    
    if (existingItemIndex !== -1) {
     storedCart[existingItemIndex].quantity += 1;
-} else {
+   } else {
     jewelry.quantity = 1;
-    storedCart.push(jewelry);
-}
+    storedCart.push(jewelry); 
+   }
 
     localStorage.setItem('cart', JSON.stringify(storedCart));
  }
