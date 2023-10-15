@@ -119,10 +119,27 @@ function removeItemFromCart(index) {
 
 }
 
+//Event listener on purchase button
+const purchase = document.getElementById("purchase")
+purchase.addEventListener("click",handlePurchase)
+
+function handlePurchase(e) {
+    e.preventDefault();
+    const totalPriceValue = document.getElementById("total-price-value");
+    const totalPrice = calculateTotalPrice();
+
+    if (totalPrice > 0) {
+        alert(`You have successfully made a purchase totaling $${totalPrice.toFixed(2)}`);
+        clearCart();
+        renderCartFromStorage(); // To refresh the cart display after clearing it
+    } else {
+        alert("Your cart is empty. Please add items before purchasing.");
+    }
+}
+
 
 
 //fetch requests
-//
 
 fetch('http://localhost:3000/jewelry')
 .then(response => response.json())
@@ -134,6 +151,8 @@ fetch('http://localhost:3000/jewelry')
  //event listerner on submit button
   const addJewelryForm = document.getElementById("add-jewelry")
   addJewelryForm.addEventListener("submit",handleSubmit)
+
+  
 
   //Event handler
 
