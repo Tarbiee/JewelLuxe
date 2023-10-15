@@ -40,6 +40,12 @@ function renderCartFromStorage(){
     <td><img src="${jewelry.image}" ></td>
             <td>${jewelry.name}</td>
             <td>${jewelry.price}</td>
+            <td>&nbsp;</td> <!-- Add non-breaking space for spacing -->
+            <td>&nbsp;</td> <!-- Add non-breaking space for spacing -->
+            <td>&nbsp;</td> <!-- Add non-breaking space for spacing -->
+            <td>&nbsp;</td> <!-- Add non-breaking space for spacing -->
+            <td>&nbsp;</td> <!-- Add non-breaking space for spacing -->
+            <td>&nbsp;</td> <!-- Add non-breaking space for spacing -->
             <td>${jewelry.quantity}<td>
             <td><button class="remove-jewel" data-index="${index}">Remove</button></td>
     `;
@@ -63,7 +69,16 @@ function renderCartFromStorage(){
 // Function to add an item to the cart and update localStorage
    function addToCart(jewelry) {
    const storedCart = JSON.parse(localStorage.getItem('cart') || '[]');
-   storedCart.push(jewelry);
+   const existingItemIndex = storedCart.findIndex(item => item.name === jewelry.name);
+
+   
+   if (existingItemIndex !== -1) {
+    storedCart[existingItemIndex].quantity += 1;
+} else {
+    jewelry.quantity = 1;
+    storedCart.push(jewelry);
+}
+
     localStorage.setItem('cart', JSON.stringify(storedCart));
  }
 
