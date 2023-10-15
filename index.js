@@ -27,15 +27,15 @@ window.addEventListener('load', () => {
     });
 
     function calculateTotalPrice() {
-  const storedCart = JSON.parse(localStorage.getItem('cart') || '[]');
-  let totalPrice = 0;
-  
-  storedCart.forEach((jewelry) => {
-    totalPrice += jewelry.price * jewelry.quantity;
-  });
-
-  return totalPrice;
-}
+        const storedCart = JSON.parse(localStorage.getItem('cart') || '[]');
+        let totalPrice = 0;
+        
+        storedCart.forEach((jewelry) => {
+          totalPrice += jewelry.price * jewelry.quantity;
+        });
+      
+        return totalPrice;
+      }
 
 //function to render the cart from localStorage
 function renderCartFromStorage(){
@@ -59,7 +59,9 @@ function renderCartFromStorage(){
             <td>&nbsp;</td> 
             <td>Quantity:${jewelry.quantity}<td>
             <td><button class="remove-jewel" data-index="${index}">Remove</button></td>
-    `;
+   
+            `;
+
     
 
     cartInfo.appendChild(cartRow);
@@ -73,6 +75,10 @@ function renderCartFromStorage(){
             renderCartFromStorage();
         });
     });
+    // Update the total price
+    const totalPriceValue = document.getElementById("total-price-value");
+    const totalPrice = calculateTotalPrice();
+    totalPriceValue.textContent = `$${totalPrice.toFixed(2)}`;
  }
 
 
@@ -91,6 +97,14 @@ function renderCartFromStorage(){
    }
 
     localStorage.setItem('cart', JSON.stringify(storedCart));
+
+    const totalPriceValue = document.getElementById("total-price-value");
+    const totalPrice = calculateTotalPrice();
+    totalPriceValue.textContent = `$${totalPrice.toFixed(2)}`;
+
+
+
+
  }
 
  //Function to remove an item from the cart and update localStorage
@@ -98,6 +112,10 @@ function removeItemFromCart(index) {
     const storedCart = JSON.parse(localStorage.getItem('cart') || '[]');
     storedCart.splice(index, 1);
     localStorage.setItem('cart', JSON.stringify(storedCart));
+
+    const totalPriceValue = document.getElementById("total-price-value");
+    const totalPrice = calculateTotalPrice();
+    totalPriceValue.textContent = `$${totalPrice.toFixed(2)}`;
 }
 
 
