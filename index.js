@@ -45,7 +45,7 @@ function renderCartFromStorage(){
     
     storedCart.forEach((jewelry, index) =>{
     const cartRow = document.createElement("tr");
-    cartRow.class ="cart-row"
+    cartRow.className ="cart-row"
     cartRow.innerHTML=`
     
     <td><img src="${jewelry.image}" ></td>
